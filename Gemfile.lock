@@ -211,7 +211,7 @@ DEPENDENCIES
   devise
   foreman
   heroku (~> 2.33.0)
-  jquery-rails
+  jquery-rails (~> 2.3.0)
   less-rails
   meta_request
   pg (= 0.12.2)
