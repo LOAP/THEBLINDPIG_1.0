@@ -1,0 +1,11 @@
+<div class="container">
+<div id="subscription">
+  <h3>Oink Oink</h3>
+  <p>You have been confirmed for <strong><%= @subscription.plan.name %></strong> at the Blind Pig.</p>
+  <p>You will be contacted with the pick-up location & time to be at the pick-up location soon.</p>
+</div>
+
+<br /><br />
+<h4><%= current_user.username %> - <%= link_to "Click Here to Logout ( highly recommended )", destroy_user_session_path, method: :delete %></h4>
+</div>
+

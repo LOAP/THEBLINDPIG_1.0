@@ -1,0 +1,29 @@
+<div class="container">
+
+<div id="plans">
+  <h3>Hello <%= current_user.username %>,</h3>
+  <h4>How many times would you like to look at the Blind Pig?</h4>
+  <br />
+
+  <% @plans.each do |plan| %>
+      <div class="plan">
+        <div class="name"><%= plan.name %></div>
+        <div class="details">
+          <div class="price">
+            <%= number_to_currency plan.price, :precision => 0 %>
+          </div>
+          <br />
+          <div class="kisses"><%= plan.kisses %> looks</div>
+          <div class="per_month">per visit</div>
+          <div class="signup">
+            <%= link_to "Sign up", new_subscription_path(:plan_id => plan.id) %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+
+<br />
+
+</div>

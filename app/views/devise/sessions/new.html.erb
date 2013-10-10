@@ -1,0 +1,9 @@
+<div class="container">
+<h2>You Have Been Chosen to See The Blind Pig</h2>
+  <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
+      <%= f.input :email, placeholder: 'Email', :autofocus => true %>
+      <%= f.input :password, placeholder: 'Password' %>
+      <%= f.button :submit, "Log In", :class => 'btn-success' %>
+  <% end %>
+
+</div>
